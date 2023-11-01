@@ -1,18 +1,17 @@
-import './App.css'
-import Financial from './component/Financial'
-import Intro from './component/intro'
-import NavBar from './component/navbar'
+import "./App.css";
+import Financial from "./component/Financial";
+import Intro from "./component/intro";
+import NavBar from "./component/navbar";
 
 function App() {
-
-
   return (
     <div className="font-sfProDisplay font-normal">
       <NavBar />
-      <Intro/>
-      <Financial/>
+      <Intro />
+      <Financial />
+      <Header />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
