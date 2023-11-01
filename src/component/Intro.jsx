@@ -8,18 +8,23 @@ import reuters from "../assets/png/reuters-2-1 1.png";
 import vector from "../assets/png/Vector.png";
 
 function Intro() {
-  const title = "Introducing Raft Cards >";
+  const title = "Introducing Raft Cards";
   return (
-    <div className="bg-[#070606] md:mx-10 lg:mx-20  py-20 px-10 text-white text-center">
-      <button className="bg-[#4d4a4a] py-2 px-3 rounded-full ">{title}</button>
-      <h1 className="my-5 p-2 md:text-6xl lg:text-8xl lg:w-[50%] m-auto text-4xl">
+    <div className="bg-[#070606]  relative md:mx-10 lg:mx-20  py-20 px-10 text-white text-center">
+     <div className="absolute top-24 w-fit lg:top-[-50] h-fit opacity-60  z-0 ">
+      <img className=" lg:flex hidden h-[30%] absolute top-52" src="https://res.cloudinary.com/dhvwthnzq/image/upload/v1698313456/raft/Vector_jvfnxb.png" alt="desktop" />
+      <img className="lg:hidden" src="https://res.cloudinary.com/dhvwthnzq/image/upload/v1698312777/raft/Grid_h3yr87.png" alt="mobile grid" />
+     </div>
+     <div className="z-20">
+     <span className="bg-[#3d3b3b] text-[#DCDCDC] borde`r-[0.5px] border-[#989898] py-1  text-sm px-3 rounded-full ">{title}</span>
+      <h1 className="my-5 p-2 md:text-6xl lg:text-8xl  m-auto text-4xl">
         Building the future of banking.
       </h1>
       <p className=" p-2 px-5 lg:my-6 lg:text-2xl lg:w-[50%] m-auto text-[#989898] mb-4">
         Experience the future of banking with RAFT. We're here to empower your
         financial journey.
       </p>
-      <button className="bg-green-500 p-3 px-5 text-lg rounded-full  ">
+      <button className="bg-[#2B892E] py-3 px-8 text-base rounded-full  ">
         Get Started
       </button>
       <div className=" p-3 flex justify-center mt-10 lg:mt-32 ">
@@ -37,6 +42,8 @@ function Intro() {
           <div></div>
         </div>
       </div>
+     </div>
+     
     </div>
   );
 }
